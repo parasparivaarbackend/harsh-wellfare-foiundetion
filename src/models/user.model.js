@@ -30,7 +30,13 @@ const userSchema = new mongoose.Schema(
     MobileNumber: {
       type: Number
     },
-
+    OTP: {
+      type: Number,
+      allowNull: true
+    },
+    otpExpiresAt: {
+      type: Date
+    },
     ProfileImage: {
       type: String
     }

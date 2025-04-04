@@ -33,7 +33,7 @@ async function sendMailTemplate(item, template) {
     
 
     const isMailSend = await mailTransporter.sendMail(mailingdetail);
-    console.log("mainsend",isMailSend);
+    // console.log("mainsend",isMailSend);
     if (!isMailSend) {
       console.error("Failed to send mail", isMailSend);
         return false;
